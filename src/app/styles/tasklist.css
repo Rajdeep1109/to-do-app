@@ -1,0 +1,144 @@
+/* General container styling */
+.tasklist-container {
+    width: 85vw;
+    margin: 0 2px;
+    padding: 19px;
+    border-radius: 11px;
+    background: #E6E6FA;
+    box-shadow:  7px 7px 14px #c4c4d5,
+                 -7px -7px 14px #ffffff;
+  }
+  
+  /* Title Styling */
+  .tasklist-container h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  .time{
+    font-size: 0.95rem;
+  }
+  .tab-buttons{
+    display: flex;
+    justify-content: center;
+  }
+  .list-button{
+    display: flex;
+  }
+  /* Task Input and Buttons */
+  .tasklist-container form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .tasklist-container input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .tasklist-container button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    background-color: #a966dd;
+    transition: background-color 0.2s ease;
+    box-shadow:  4px 4px 7px #c4c4d5,
+             -4px -4px 7px #ffffff;
+  }
+  
+  .tasklist-container button:hover {
+    background-color: #7b249d;
+  }
+  
+  /* Task List Styling */
+  .tasklist-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .tasklist-container li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 7px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: transform 0.2s ease;
+  }
+  
+  .tasklist-container li:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Priority Button */
+  .tasklist-container .priority-btn {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    color: white;
+    background-color: #f57c00;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .tasklist-container .priority-btn:hover {
+    background-color: #e65100;
+  }
+  
+  /* Delete Button */
+  .tasklist-container .delete-btn {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    color: white;
+    background-color: #e53935;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .tasklist-container .delete-btn:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Mobile-platform Adjustments */
+  @media (max-width: 600px) {
+    .tasklist-container{
+        width: 100vw;
+    }
+    .tasklist-container form {
+      flex-direction: column;
+      gap: 5px;
+    }
+  
+    .tasklist-container input[type="text"] {
+      width: 100%;
+    }
+  
+    .tasklist-container button {
+      width: 100%;
+    }
+    .task-item {
+      flex-direction: row;
+      gap: 10px;
+    }
+    .list-button{
+        display: flex;
+    }
+    .list-button button{
+        width: auto;
+
+    }
+  }
+  
